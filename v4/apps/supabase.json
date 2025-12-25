@@ -70,7 +70,7 @@
       "depends_on": ["$$cap_appname-db"],
       "image": "postgrest/postgrest:$$cap_postgrest_version",
       "environment": {
-        "PGRST_DB_URI": "postgres://authenticator:$$cap_postgres_password@srv-captain--$$cap_appname-db:5432/postgres",
+        "PGRST_DB_URI": "postgres://supabase_admin:$$cap_postgres_password@srv-captain--$$cap_appname-db:5432/postgres",
         "PGRST_DB_SCHEMAS": "public,storage,graphql_public",
         "PGRST_DB_ANON_ROLE": "anon",
         "PGRST_JWT_SECRET": "$$cap_jwt_secret",
