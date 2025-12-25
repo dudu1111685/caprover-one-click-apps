@@ -91,7 +91,7 @@
         "POSTGRES_PASSWORD": "$$cap_postgres_password",
         "DEFAULT_ORGANIZATION_NAME": "Default Org",
         "DEFAULT_PROJECT_NAME": "Default Project",
-        "SUPABASE_URL": "https://$$cap_appname-rest.$$cap_root_domain",
+        "SUPABASE_URL": "http://srv-captain--$$cap_appname-rest:3000",
         "SUPABASE_PUBLIC_URL": "https://$$cap_appname-rest.$$cap_root_domain",
         "SUPABASE_ANON_KEY": "$$cap_anon_key",
         "SUPABASE_SERVICE_KEY": "$$cap_service_role_key",
