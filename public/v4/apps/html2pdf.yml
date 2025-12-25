@@ -25,9 +25,10 @@ caproverOneClickApp:
             Done! 🎉
             Your service is available at http://$$cap_appname.$$cap_root_domain
 
-            API Usage:
-            - Convert URL: curl "http://$$cap_appname.$$cap_root_domain/pdf?url=https://example.com" > output.pdf
-            - Convert HTML: curl -X POST -H "Content-Type: text/html" -d "<h1>Hello</h1>" "http://$$cap_appname.$$cap_root_domain/pdf" > output.pdf
+            API Usage (endpoint is /generate):
+            - Convert URL: curl "http://$$cap_appname.$$cap_root_domain/generate?source=https://example.com" > output.pdf
+            - With options: curl "http://$$cap_appname.$$cap_root_domain/generate?source=https://example.com&format=A4&timeout=10" > output.pdf
+            - Convert HTML (POST): curl -X POST -H "Content-Type: application/json" -d '{"source":"<h1>Hello</h1>"}' "http://$$cap_appname.$$cap_root_domain/generate" > output.pdf
 
     displayName: HTML2PDF
     isOfficial: false
