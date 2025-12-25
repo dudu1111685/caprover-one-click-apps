@@ -97,7 +97,8 @@
         "SUPABASE_SERVICE_KEY": "$$cap_service_role_key",
         "AUTH_JWT_SECRET": "$$cap_jwt_secret",
         "NEXT_PUBLIC_ENABLE_LOGS": "false",
-        "NEXT_ANALYTICS_BACKEND_PROVIDER": "postgres"
+        "NEXT_ANALYTICS_BACKEND_PROVIDER": "postgres",
+        "HOSTNAME": "0.0.0.0"
       },
       "restart": "always",
       "caproverExtra": {
